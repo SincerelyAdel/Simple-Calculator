@@ -1,0 +1,13 @@
+*::before, *::after {
+    box-sizing: border-box;
+}
+
+input[type=text]:focus {
+    padding: 1vw;
+    border-radius: 1%;
+    border-color: rgb(0, 255, 110);
+}
+
+#snum {
+    top: 5vh;
+}
