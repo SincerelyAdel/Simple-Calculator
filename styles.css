@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background: linear-gradient(to right, #21212c, #0c1a4a);
+}
+
 input[type=text]:focus {
     padding: 1vw;
     border-radius: 1%;
