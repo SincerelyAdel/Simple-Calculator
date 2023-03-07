@@ -11,3 +11,8 @@ input[type=text]:focus {
 #snum {
     top: 5vh;
 }
+
+.smth, label, #demo {
+    color: white;
+}
+
