@@ -58,3 +58,15 @@ ol li{
 #fnum:hover, #snum:hover {
     border-radius: 5%;
 }
+
+.Styling-Block {
+    display: flex;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    visibility: hidden;
+}
+
