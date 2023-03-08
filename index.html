@@ -10,17 +10,33 @@
 </head>
 <body>
     <h1 class="smth">Calculator</h1>
-    <button onclick="advanced_add()" id="addition">Addition</button>
-    <button onclick="advanced_subtract()" id="subtraction">Subtraction</button><br><br>
-    <button onclick="advanced_division()" id="division">Division</button>
-    <button onclick="advanced_multiplication()" id="multiplication">multiplication</button><br><br>
+    <div class="Buttons">
+        <button onclick="advanced_add()" id="addition">Addition</button>
+        <button onclick="advanced_subtract()" id="subtraction">Subtraction</button>
+        <button onclick="advanced_division()" id="division">Division</button>
+        <button onclick="advanced_multiplication()" id="multiplication">multiplication</button>
+    </div>
+    <div class="Number-Fields">
+        <ol>
+            <li>
+                <div class="Number-First">
+                    <label for="fnum">this is the first number</label><br>
+                    <input type="text" placeholder="Enter your first number" id="fnum">
+                </div>
+            </li>
+            <li>
+                <div class="Number-Second">
+                    <label for="snum">this is for the second number</label><br>
+                    <input type="text" placeholder="Enter your second number" id="snum">
+                </div>
+            </li>
+        </ol>  
+    </div>
+    
+    
 
-    <label for="fnum">this is the first number</label><br>
-    <input type="text" placeholder="Enter your first number" id="fnum"><br><br>
-    <label for="snum">this is for the second number</label><br>
-    <input type="text" placeholder="Enter your second number" id="snum">
-
-    <p id="demo"></p>
+    
+    <p id="Result"></p>
     
 </body>
 </html>

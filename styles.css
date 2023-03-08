@@ -16,7 +16,38 @@ input[type=text]:focus {
     top: 5vh;
 }
 
-.smth, label, #demo {
+.smth, label, #Result {
     color: white;
 }
 
+h1 {
+    text-align: center;
+}
+
+.Buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    gap: 10px 10px;
+    
+}
+
+ol li{
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+#Result {
+    display: flex;
+    justify-content: center;
+}
+
+.Number-Fields {
+    text-align: center;
+}
+
+#fnum:hover, #snum:hover {
+    border-radius: 20%;
+}
