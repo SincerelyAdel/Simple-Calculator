@@ -7,9 +7,10 @@ body {
 }
 
 input[type=text]:focus {
-    padding: 1vw;
+    padding: 5px;
     border-radius: 1%;
-    border-color: rgb(0, 255, 110);
+    border: 3px solid cadetblue;
+    background-color: rgb(182, 199, 255);
 }
 
 #snum {
@@ -46,8 +47,14 @@ ol li{
 
 .Number-Fields {
     text-align: center;
+    position: relative;
+    top: 20px;
+    /* border: 3px solid rgb(18, 8, 41);
+    transform: translate(-50%, 50%);
+    left: 50%;
+    width: 30%; */
 }
 
 #fnum:hover, #snum:hover {
-    border-radius: 20%;
+    border-radius: 5%;
 }
