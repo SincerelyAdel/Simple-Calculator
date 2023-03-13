@@ -6,38 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script src="app.js"></script>
-    <title>CaloCalotor</title>
+    <title>CaloCalotor😐</title>
 </head>
 <body>
-    <h1 class="smth">Calculator</h1>
-    <div class="Buttons">
+    <h1 class="Title">Calculator</h1>
+    <div class="Basic-Operations">
         <button onclick="advanced_add()" id="addition">Addition</button>
         <button onclick="advanced_subtract()" id="subtraction">Subtraction</button>
         <button onclick="advanced_division()" id="division">Division</button>
         <button onclick="advanced_multiplication()" id="multiplication">multiplication</button>
     </div>
     <div class="Number-Fields">
-        <ol>
+        <ol class="Number-Fields-Child">
             <li>
                 <div class="Number-First">
-                    <label for="fnum">this is the first number</label><br>
+                    <label for="fnum" id="fnum-title">this is the first number</label><br>
                     <input type="text" placeholder="Enter your first number" id="fnum">
                 </div>
             </li>
             <li>
                 <div class="Number-Second">
-                    <label for="snum">this is for the second number</label><br>
+                    <label for="snum" id="snum-title">this is the second number</label><br>
                     <input type="text" placeholder="Enter your second number" id="snum">
                 </div>
             </li>
         </ol>  
+        <p id="Result"></p>
+    </div>
+
+    <div class="Advanced-Operations-Parent">
+        <div class="Advanced-Operations">
+            <button onclick="advanced_power()" id="power">Power</button>
+            <button onclick="advanced_root()" id="root">Root</button>
+        </div>
     </div>
     
-    <p id="Result"></p>
-
-    <div class="Styling-Block">1</div>
-    <div class="Styling-Block">2</div>
-    <div class="Styling-Block">3</div>
-    
+    <div class="Styling">
+        <div class="Styling-Block">1</div>
+        <div class="Styling-Block">2</div>
+        <div class="Styling-Block">3</div>
+    </div>
 </body>
 </html>
