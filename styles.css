@@ -2,16 +2,156 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: #FF3CAC;
-    background-image: linear-gradient(126deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+ol, ul {
+    list-style: none;
+    margin: 0;
 }
 
-input[type=text]:focus {
-    padding: 5px;
-    border-radius: 1%;
-    border: 3px solid cadetblue;
-    background-color: rgb(182, 199, 255);
+html {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(1800deg, #181717, rgb(14, 13, 13));
+    padding: 10px;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header {
+    /* border: 1px solid whitesmoke; */
+    border-radius: 15px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    background-image: linear-gradient(90deg, #14283e, #081a2d);
+}
+
+.Modes {
+    background-image: linear-gradient(90deg, #14283e, #081a2d);;
+    /* border: 1px solid whitesmoke; */
+    border-radius: 15px;
+    position: absolute;
+    top: 105px;
+    left: 10px;
+    right: 10px;
+    padding: 0;
+}
+
+.Modes-Title {
+    color: #ffffff;
+    /* border-right: 1px solid whitesmoke; */
+    width: max-content;
+    padding-right: 15px;
+    position: relative;
+    left: 50px;
+}
+
+.Modes-Section {
+    display: grid;
+    grid-template-columns: 70% 10% 10% 10%;
+    max-height: min-content;
+    
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+}
+
+.Modes-Buttons > li {
+    color: #ffffff;
+}
+
+.Mode-Button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 15px;
+}
+
+.Mode-Button:hover {
+    background-color: #7663ff20;
+}
+
+.Mode-Button:focus {
+    background-color: #7563ff4f;
+}
+
+.Results {
+    background-image: linear-gradient(90deg, #14283e, #081a2d);;
+    /* border: 1px solid whitesmoke; */
+    border-radius: 15px;
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding: 0;
+    margin: 0;
+    min-height: 400px;
+}
+
+.Results-Section {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 0;
+    padding: 15px;
+}
+
+.Results-Header {
+    color: whitesmoke;
+    /* border: 1px solid whitesmoke; */
+    text-align: center;
+    margin-top: 0px;
+}
+
+.Results-Section > li {
+    /* background-image: radial-gradient(#19294b, #101d3a); */
+    /* border: 1px solid whitesmoke; */
+    border-radius: 15px;
+    padding: 10px;
+    animation: 4s shine infinite linear;
+}
+
+.Results-Section > li:hover {
+    background-color: #7663ff20;
+}
+
+.Results-Input {
+    /* border: 1px solid whitesmoke; */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 0px;
+    
+}
+
+.Input-Field {
+    min-height: 80px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    background-image: linear-gradient(90deg, #2e5757, #1a2f2f);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 25px;
+    
+}
+
+.Simple-Number-Input {
+    margin-top: 5px;
+    width: 70%;
+    background-color: #417272;
+    border: 0px;
+    height: 30%;
+    border-radius: 15px;
 }
 
 label, #Result {
@@ -21,7 +161,7 @@ label, #Result {
 .Title, #Result, #fnum-title, #snum-title, .Basic-Operations > button:focus, .Advanced-Operations > button:focus {
     text-align: center;
     background-color: #F4D03F;
-    background-image: linear-gradient(270deg, #b300ff 0%, #ffffff 50%);
+    background-image: linear-gradient(270deg, #417272 0%, #ffffff 50%);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -34,7 +174,8 @@ label, #Result {
     justify-content: center;
     align-items: center;
     margin: 5px;
-    gap: 10px 10px;   
+    gap: 10px 10px;
+    margin-top: 400px;   
 }
 
 .Advanced-Operations-Parent {
@@ -92,3 +233,24 @@ label, #Result {
     visibility: hidden;
 }
 
+@keyframes shine {
+    0% {
+        background-color: #1f34495d;
+    }
+
+    25% {
+        background-color: #1f344977;
+    }
+
+    50% {
+        background-color: #1f344994;
+    }
+
+    75% {
+        background-color: #1f3449b3;
+    }
+
+    100% {
+        background-color: #1f34495d;
+    }
+}
